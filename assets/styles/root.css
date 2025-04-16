@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #1d5e1b;
+  --primary-color-dark: #252525;
+  --pure-white: #f0f1fa;
+  --white: #fff;
+  --primary-red: #df6951;
+  --yellow: #f1a501;
+  --pure-black: #252525;
+  --light-gray: #71727c;
+  --dark-gray: #5e6282;
+  
+  --section-separator: 3.5rem;
+  --section-mini-separator: 2.5rem;
+  --section-responsive-md-separator: 1.5rem;
+  --section-responsive-sm-separator: 1rem;
+  --section-responsive-xs-separator: 0.5rem;
+
+  --heading-font-size: 3.5rem;
+  --subheading-font-size: 3rem;
+  --md-text-font-size: 1.5rem;
+  --mobile-text-font-size: 1rem;
+  --mobile-mini-text-font-size: 0.8rem;
+}

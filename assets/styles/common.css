@@ -1,0 +1,13 @@
+.centerize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  font-family: 'Poppins';
+}
+.container {
+  width: 90vw;
+  max-width: 1600px;
+  margin: 0 auto;
+}
