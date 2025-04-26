@@ -476,15 +476,14 @@ article {
   color: var(--yellow);
 }
 .common-btn {
-  display: inline-block;
+  display: flex;
+  gap: 0.5rem;
   background-color: var(--yellow);
   color: var(--pure-black);
-  padding: 8px 10px;
+  padding: 4px 4px;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.3s ease;
-  white-space: nowrap;
 }
 .common-btn span:first-child {
   background-color: var(--primary-color);
@@ -563,7 +562,6 @@ article {
     height: 200px;
   }
   .common-btn {
-    padding: 8px 4px;
     font-size: var(--mobile-mini-text-font-size);
   }
 }
@@ -703,7 +701,8 @@ article {
 /* responsive my-portfolio */
 @media screen and (min-width: 1440px) {
   .project img {
-    height: 350px;
+    height: 21.9rem;
+    width: 100%;
   }
 
   .tag {
@@ -994,9 +993,10 @@ article {
   font-size: var(--md-text-font-size);
 }
 .contact-now {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
   width: fit-content;
+  margin: 0 auto;
 }
 .tag-cloud {
   display: flex;
@@ -1162,7 +1162,9 @@ select option {
   .contact-container {
     flex-direction: column !important;
   }
-
+  .contact-form textarea {
+    width: 100%;
+  }
   .form-row {
     flex-direction: column !important;
     gap: 10px;
