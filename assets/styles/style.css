@@ -484,6 +484,7 @@ article {
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
+  width: fit-content;
 }
 .common-btn span:first-child {
   background-color: var(--primary-color);
@@ -1234,6 +1235,11 @@ select option {
   padding: 10px;
   background-color: var(--yellow);
   border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navigation,
 .contact {
