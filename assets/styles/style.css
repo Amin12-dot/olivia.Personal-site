@@ -67,6 +67,7 @@ ul li a.active {
   display: flex;
   align-items: center;
   padding: var(--section-separator) 0;
+  gap: var(--section-responsive-sm-separator);
 }
 .header-content > div {
   flex-basis: 50%;
@@ -208,8 +209,6 @@ body {
   .humber-menu {
     display: block;
   }
-}
-@media screen and (max-width: 980px) {
   .header-content {
     flex-direction: column !important;
     justify-content: center;
@@ -478,6 +477,7 @@ article {
 .common-btn {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
   background-color: var(--yellow);
   color: var(--pure-black);
   padding: 4px 4px;
@@ -498,6 +498,11 @@ article {
   background-color: var(--pure-white);
   padding: 5px;
   border-radius: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 0.7;
 }
 .signature {
   margin-top: 20px;
