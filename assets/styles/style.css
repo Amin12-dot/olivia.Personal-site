@@ -467,6 +467,7 @@ article {
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: var(--section-responsive-md-separator);
+  justify-content: flex-end;
 }
 .stats div {
   text-align: center;
@@ -480,10 +481,20 @@ article {
   gap: 0.5rem;
   background-color: var(--yellow);
   color: var(--pure-black);
-  padding: 4px 4px;
+  padding: 4px 8px;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
+  min-width: 128px;
+  height: 40px;
+  white-space: nowrap;
+  align-items: center;
+}
+.signature-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--section-responsive-sm-separator);
+  flex-wrap: wrap;
 }
 .common-btn span:first-child {
   background-color: var(--primary-color);
@@ -493,17 +504,16 @@ article {
 }
 
 .common-btn span:last-child {
-  margin-left: 8px;
   background-color: var(--pure-white);
   padding: 5px;
   border-radius: 100%;
+  width: 30px;
+  height: 30px;
 }
 .signature {
-  margin-top: 20px;
   font-family: 'Brush Script MT', cursive;
   font-size: var(--md-text-font-size);
   color: var(--yellow);
-  margin-left: 20px;
 }
 /* responsive about-me */
 @media screen and (max-width: 1124px) {
@@ -522,11 +532,6 @@ article {
     display: block;
     text-align: center;
     margin-left: 0;
-  }
-  .about-me-wrapper .download-btn {
-    margin: 0 auto;
-    display: block;
-    width: fit-content;
   }
   .skills {
     position: absolute;
@@ -563,6 +568,7 @@ article {
   }
   .common-btn {
     font-size: var(--mobile-mini-text-font-size);
+    padding: 5px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -580,6 +586,9 @@ article {
   }
   .feature-name span {
     font-size: var(--mobile-mini-text-font-size);
+  }
+  .signature-wrapper{
+    justify-content: center;
   }
 }
 
@@ -696,6 +705,8 @@ article {
   padding: 10px;
   border-radius: 100%;
   align-self: last baseline;
+  width: 45px;
+  height: 45px;
 }
 
 /* responsive my-portfolio */
@@ -903,6 +914,8 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30px;
+  height: 30px;
 }
 @media screen and (max-width: 1170px) {
   .prices {
@@ -1155,7 +1168,7 @@ select option {
 /* responsive contact-us */
 @media screen and (min-width: 1024px) {
   .contact-form textarea {
-    width: 75%;
+    width: 96%;
   }
 }
 @media (max-width: 768px) {
@@ -1256,9 +1269,11 @@ select option {
 .contact-with-email h3 {
   color: var(--yellow);
 }
+
 .contact-with-email form {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 .contact-with-email form input {
   border-radius: 20px;
@@ -1271,7 +1286,9 @@ select option {
   border-radius: 10px;
   border: 0;
   padding: 10px;
+  background-color: var(--primary-color);
 }
+
 .footer-bottom {
   width: 100vw;
   background-color: var(--primary-color);
@@ -1383,12 +1400,6 @@ select option {
 
   .footer-info {
     max-width: 250px;
-  }
-
-  .contact-with-email form {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
   }
 
   .contact-with-email input {
